@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Sprite
+  m_EditorClassIdentifier: 
+  m_GroupName: Sprite
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fcf7f5cb783a93c45965aa61be48ad8f
+  m_SerializeEntries:
+  - m_GUID: 5c34bc5f349948e43995a57f735e2b0b
+    m_Address: 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sprite
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 10cde88371135a54ab66d74cadcb46e2
+    m_Address: bg.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sprite
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 36aeef505c1c2e84a8ccd051f8dc9d20
+    m_Address: loading.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sprite
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 87dc26d87da58f141880a192a8d18517, type: 2}
+  m_SchemaSet:
+    m_Schemas: []
