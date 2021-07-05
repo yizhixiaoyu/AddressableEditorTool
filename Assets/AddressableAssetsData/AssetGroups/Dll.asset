@@ -15,10 +15,17 @@ MonoBehaviour:
   m_GroupName: Dll
   m_Data:
     m_SerializedData: []
-  m_GUID: a08ef1e593cda624897985ca7fddc86a
+  m_GUID: a9722fb0ec9f7ba40a03828a414fde45
   m_SerializeEntries:
+  - m_GUID: b7980e80f324dee4189751d77cd6295e
+    m_Address: MyMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dll
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 78214621c5c432947842a2339d1c577f
-    m_Address: Unity.TextMeshPro.bytes
+    m_Address: Unity.TextMeshPro
     m_ReadOnly: 0
     m_SerializedLabels:
     - Dll

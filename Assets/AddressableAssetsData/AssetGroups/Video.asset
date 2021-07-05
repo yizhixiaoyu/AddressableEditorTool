@@ -15,10 +15,10 @@ MonoBehaviour:
   m_GroupName: Video
   m_Data:
     m_SerializedData: []
-  m_GUID: d9194e6b087326e47b5726480c837bb7
+  m_GUID: d2c1fc610972a5e41bc21371c7d3e231
   m_SerializeEntries:
   - m_GUID: 7cb9616099ff2e54d8885166a4c6432b
-    m_Address: Cube123.prefab
+    m_Address: Cube123
     m_ReadOnly: 0
     m_SerializedLabels:
     - Video

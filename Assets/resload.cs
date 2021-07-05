@@ -5,10 +5,7 @@
 // - Email:         #AuthorEmail#
 // - Description:   
 //======================================================
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public static class resload
 {
@@ -56,7 +53,7 @@ public static class resload
             {
                 return item;
             }
-            Debug.LogError(item.name+" :音乐名字为");
+            Debug.LogError(item.name + " :音乐名字为");
         }
         Debug.LogError("没有名字为" + audo + "的audioclip,请检查Audio的addressable groups");
         return null;

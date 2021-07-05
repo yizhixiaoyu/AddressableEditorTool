@@ -15,24 +15,24 @@ MonoBehaviour:
   m_GroupName: Sprite
   m_Data:
     m_SerializedData: []
-  m_GUID: fcf7f5cb783a93c45965aa61be48ad8f
+  m_GUID: 71f76660ef1dd2447a20f4b09b93681a
   m_SerializeEntries:
   - m_GUID: 5c34bc5f349948e43995a57f735e2b0b
-    m_Address: 1.png
+    m_Address: 1
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sprite
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 10cde88371135a54ab66d74cadcb46e2
-    m_Address: bg.png
+    m_Address: bg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sprite
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 36aeef505c1c2e84a8ccd051f8dc9d20
-    m_Address: loading.png
+    m_Address: loading
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sprite

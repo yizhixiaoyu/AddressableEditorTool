@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Video;
-using UnityEngine.SceneManagement;
-using System.IO;
-using UnityEngine.ResourceManagement.ResourceLocations;
-using System.Reflection;
 
 [Serializable]
 public class ResourcesLoadManage : monoSingleton<ResourcesLoadManage>

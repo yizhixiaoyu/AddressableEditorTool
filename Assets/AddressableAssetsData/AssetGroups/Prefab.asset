@@ -15,17 +15,17 @@ MonoBehaviour:
   m_GroupName: Prefab
   m_Data:
     m_SerializedData: []
-  m_GUID: ccf09c8a3951e384da4e883d5c6ea67e
+  m_GUID: 09d18e1776566e24c9d86c2f56a8458f
   m_SerializeEntries:
   - m_GUID: ee9fb035c91417a48800e511c8e4d2cc
-    m_Address: Cube.prefab
+    m_Address: Cube
     m_ReadOnly: 0
     m_SerializedLabels:
     - Prefab
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 97bce127733ba16499197ef44fc50564
-    m_Address: Sphere.prefab
+    m_Address: Sphere
     m_ReadOnly: 0
     m_SerializedLabels:
     - Prefab

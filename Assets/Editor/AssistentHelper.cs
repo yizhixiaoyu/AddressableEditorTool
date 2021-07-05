@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
+﻿using System.IO;
 using UnityEditor;
 
-public static class AssistentHelper 
+public static class AssistentHelper
 {
     public static void CheckDirectory(string dir)
     {

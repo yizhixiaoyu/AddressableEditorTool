@@ -15,8 +15,29 @@ MonoBehaviour:
   m_GroupName: Scene
   m_Data:
     m_SerializedData: []
-  m_GUID: f7cf527394e66234db6f181250edcc51
-  m_SerializeEntries: []
+  m_GUID: 564b4253a51b56549a19c5000eb975d7
+  m_SerializeEntries:
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: start
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scene
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4516a9731558ece46a2ae64b11226fe3
+    m_Address: game
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scene
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0a32bf29950ba95468d9f4409090e62d
+    m_Address: NewUnlitShader
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scene
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 87dc26d87da58f141880a192a8d18517, type: 2}
   m_SchemaSet:

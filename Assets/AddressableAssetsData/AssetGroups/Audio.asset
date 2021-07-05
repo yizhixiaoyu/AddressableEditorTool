@@ -15,10 +15,10 @@ MonoBehaviour:
   m_GroupName: Audio
   m_Data:
     m_SerializedData: []
-  m_GUID: d901d200f657d564c91f050a9082aae3
+  m_GUID: 078d5d4dfd9f7d7479c135ed0961b4eb
   m_SerializeEntries:
   - m_GUID: 73e270dafaf218847810b4e9c34b3b07
-    m_Address: BGChangJing.mp3
+    m_Address: BGChangJing
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio

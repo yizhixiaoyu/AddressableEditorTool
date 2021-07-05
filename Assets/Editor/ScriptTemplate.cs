@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ScriptTemplate
+﻿public class ScriptTemplate
 {
     public const string ConfigScript =
          @"
@@ -28,7 +24,7 @@ namespace ToolModul
 ";
 
 
-    public const string ConfigType=
+    public const string ConfigType =
         @"using System;
 using System.Collections.Generic;
 

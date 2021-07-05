@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
-using System.IO;
+﻿using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using UnityEditor;
+using UnityEngine;
 
 /// <summary>
 /// 自定义生成列表
@@ -74,7 +72,7 @@ public class CustomToolModul : EditorWindow
                     }
                     Debug.Log(needWriteConfigType);
                     if (!needWriteConfigType) return;
-                    using (FileStream fs = new FileStream(configTypePath, FileMode.OpenOrCreate,FileAccess.ReadWrite, FileShare.ReadWrite))
+                    using (FileStream fs = new FileStream(configTypePath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
                     {
                         using (StreamWriter sw = new StreamWriter(fs, Encoding.UTF8))
                         {
