@@ -269,8 +269,14 @@
     <Reference Include="json">
       <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/json.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
@@ -281,14 +287,8 @@
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/project/AddressablePro/AddressableEditor - 副本/Addressable/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/unitySt/2019.4.17f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -700,6 +700,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{591FD9FB-3FBC-CB7C-06B5-27C42FA1A902}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
+      <Project>{3ABBD335-51CF-1F8E-1F12-57A5AA3ADB6C}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
+      <Project>{7512A383-360B-D7B0-4962-E50BE575F16C}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

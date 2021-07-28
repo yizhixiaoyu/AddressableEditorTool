@@ -3,6 +3,7 @@ using Sirenix.OdinInspector.Editor;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography;
 using System.Text;
 using UnityEditor;
 using UnityEditor.AddressableAssets;
@@ -47,6 +48,12 @@ namespace Script.ResMgr.Editor
             AssetDatabase.Refresh();
         }
 
+        [MenuItem("Tools/md5加密")]
+        public static void md5()
+        {
+            CustomWindow custom = new CustomWindow();
+            custom.Show();
+        }
 
         [MenuItem("Tools/CreateSettings")]
         public static void CreateSettings()
@@ -263,22 +270,69 @@ namespace Script.ResMgr.Editor
         }
     }
 
+    //[MenuItem("md5加密")]
     public class CustomWindow : EditorWindow
     {
         private string configLableName;
-        private string configGroupName;
+        //private int configCodeIndex;
         public void OnGUI()
         {
             EditorGUILayout.BeginVertical();
             configLableName = EditorGUILayout.TextField("Lable", configLableName, GUILayout.MaxWidth(400));
-            configGroupName = EditorGUILayout.TextField("Lable", configGroupName, GUILayout.MaxWidth(400));
+            //configCodeIndex = EditorGUILayout.IntField("Lable", configCodeIndex, GUILayout.MaxWidth(400));
             EditorGUILayout.EndHorizontal();
-            if (GUILayout.Button("确定生成配置文件"))
+            if (GUILayout.Button("生成MD5"))
             {
-                Debug.Log($"当前生成的配置文件名称为:{configLableName}");
+                if (!String.IsNullOrEmpty(configLableName))
+                {
+                    Encrypt(configLableName, 16);
+                }
+
+                //Debug.Log($"当前生成的配置文件名称为:{configLableName}");
             }
         }
+        /// <summary>
+        /// MD5加密
+        /// </summary>
+        /// <param name="str">加密字符</param>
+        /// <param name="code">加密位数16/32</param>
+        /// <returns></returns>
+        public static string Encrypt(string str, int code)
+        {
+            string strEncrypt = string.Empty;
+            if (code == 16)
+            {
+                strEncrypt = Hash(str).Substring(8, 16);
+            }
+
+            if (code == 32)
+            {
+                strEncrypt = Hash(str);
+            }
+            return strEncrypt;
+        }
+        /// <summary>
+        /// 32位MD5加密（小写）
+        /// </summary>
+        /// <param name="input">输入字段</param>
+        /// <returns></returns>
+        public static string Hash(string input)
+        {
+            MD5CryptoServiceProvider md5Hasher = new MD5CryptoServiceProvider();
+            byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
+            StringBuilder sBuilder = new StringBuilder();
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+            return sBuilder.ToString();
+        }
     }
+
+
+
+
+    [LabelText("批量加载资源到Ad包资源")]
     public class MySimpleEditorWindow : OdinEditorWindow
     {
         public static string path = "/AB_res/";
@@ -538,7 +592,7 @@ namespace Script.ResMgr.Editor
             //}
         }
 
-        [MenuItem("Assets/showwindow", priority = 0)]
+        [MenuItem("Assets/AddressAbleEditorWindow", priority = 0)]
         private static void OpenWindow()
         {
             //List<string> listnames = new List<string>() { "1", "2" };
