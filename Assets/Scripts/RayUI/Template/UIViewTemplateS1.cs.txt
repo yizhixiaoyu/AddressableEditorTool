@@ -1,0 +1,19 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+public partial class {ROOT_UI_NAME}
+{
+	public {ROOT_UI_NAME}() : base(UIType.{UI_TYPE}, UIMode.{UI_MODE}, UICollider.{UI_COLLIDER})
+	{
+
+	}
+
+	public void OnStart()
+	{
+		
+	}
+
+	//public void MyEventHandler()
+	//{
+	//}
+}
